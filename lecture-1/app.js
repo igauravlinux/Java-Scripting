@@ -37,6 +37,11 @@
 // console.log(name);  Error
 
 // var :- can be re-declared and updated . A global scope variable.
+// var a = 20;
+// var a = 90;
+// a = 21
+
+// console.log(a);
 
 
 

@@ -15,12 +15,12 @@
 
 
 // Global Scope Variable >>>>>>>>>>>>>
-// var name = "Gaurav Kumar";
 
 // function myFunk() {
+//     var name = "Gaurav Kumar";
 //   if (true) {
+//       console.log(name);
 //   }
-//     console.log(name);
 
 // }
 
@@ -31,17 +31,17 @@
 // Note :- variable ko curly barces ke andar declare kar rhe hai , to usko ham usi curly braces ke andar access kr skte hai , uske bahar nahi
 
 
-function myFunk(){
+// function myFunk(){
     
-    if(true){
-        let a = 10;
-        // console.log(a);   
-    }
+//     if(true){
+//         let a = 10;
+//         // console.log(a);   
+//     }
 
-    let b = 10;
-    console.log("sum of a and b is: ",a + b);
+//     let b = 10;
+//     console.log("sum of a and b is: ",a + b);
 
-}
+// }
 
-myFunk();
+// myFunk();
 
