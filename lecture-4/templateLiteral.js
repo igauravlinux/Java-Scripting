@@ -12,14 +12,20 @@ console.log(typeof sentence);
 
 // Use of template literal
 
-let obj = {
-    item : "Pen",
-    price : 200,
-};
+const info = {
+    name : `Gaurav`,
+    age : 23,
+    profession : `Software Developer`,
+}
 
-console.log(`The Cost of ${obj.item} is ${obj.price}`);
+console.log(`My name is ${info.name} my age is ${info.age} and My Profession is ${info.profession}`);
 
+// Multi Line String
 
+let message = `Hello
+I am Gaurav
+and i am a software developer`;
 
-
+console.log(message);
+                
 

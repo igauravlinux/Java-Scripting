@@ -1,7 +1,7 @@
 
 // String Methods
 
-let str = " Gaurav";
+let str = "Gaurav";
 let str1 = "Kumar";
 
 console.log(str.length); // Gets number of Character
@@ -22,7 +22,15 @@ console.log(str.trim()); // Removes whitespaces
 
 console.log(str.split(",")); // //Converts string to array
 
-console.log(str.concat(str1)); // Joins two string
+console.log(str.concat(str1)); // Joins two strings
+
+console.log(str.includes("G")); // Checks if the string contains a substring
+
+console.log(str.startsWith("Gau")); // checks if string starts with given text
+
+console.log(str.endsWith("v")); // Checks if string ends with given text
+
+console.log(str.repeat(3)); // Repeats string n times
 
 
 
