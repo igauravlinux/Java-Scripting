@@ -1,5 +1,5 @@
 
-const { log } = require("console");
+const {log} = require("console");
 const readline = require("readline");
 
 const rl = readline.createInterface({
@@ -7,11 +7,9 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question("Enter a string: ",(str) =>{
 
-    let result = str;
+rl.question("enter a string: ",(str)=>{
 
-    console.log(str);
     
 
 
