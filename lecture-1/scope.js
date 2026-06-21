@@ -1,4 +1,4 @@
-// functional scope >>>>>>>>>>>>
+// {1} functional scope >>>>>>>>>>>>
 
 // function show(){
 //     let name = "Soni Sharma";
@@ -23,7 +23,7 @@
 // -------------------------------------------------------------------------------------------------
 
 
-// Global Scope Variable >>>>>>>>>>>>>
+// {2}  Global Scope Variable >>>>>>>>>>>>>
 
 
 // let name = "Soni Sharma";
@@ -45,22 +45,45 @@
 
 
 
-// Block Scope Varible >>>>>>>>
+// {3} Block Scope Varible >>>>>>>>
 
 // Note :- let aur const variable ko kisi v curly braces yani ki block ke andar declare kar rhe hai , to usko ham usi curly braces ke andar access kr skte hai , uske bahar nahi
 
 
-function show(){
+// function show(){
 
     
-    if(true){
-        let name = "Soni Sharma";
-        console.log(`Her name is ${name}`);  
+//     if(true){
+//         let name = "Soni Sharma";
+//         console.log(`Her name is ${name}`);  
+//     }
+    
+//     console.log(`Her name is ${name}`); //Error 
+    
+
+// }
+// show();
+
+
+
+
+// {4} Lexical Scope >>>>>>>>>>>>>>
+// Note :- Inner function apne parent function ke variables ko access kar sakta hai.
+
+
+function outer(){  //Outer Function
+
+    let name = "        Soni Sharma  ";
+
+    function inner(){   // Inner Function
+
+        console.log(name.trimEnd());
+
     }
-    
-    console.log(`Her name is ${name}`); //Error 
-    
+
+    inner();
 
 }
-show();
+
+outer();
 
