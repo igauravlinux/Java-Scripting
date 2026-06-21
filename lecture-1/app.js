@@ -22,7 +22,7 @@
 // let name = "Gaurav kumar";
 // let age = 23;
 // let price = 999.90;
-// name = "sonii sharma";
+// name = "soni sharma";
 
 // let marks;
 
