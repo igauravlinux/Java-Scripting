@@ -71,19 +71,37 @@
 // Note :- Inner function apne parent function ke variables ko access kar sakta hai.
 
 
-function outer(){  //Outer Function
+// function outer(){  //Outer Function
 
-    let name = "        Soni Sharma  ";
+//     let name = "        Soni Sharma  ";
 
-    function inner(){   // Inner Function
+//     function inner(){   // Inner Function
 
-        console.log(name.trimEnd());
+//         console.log(name.trimEnd());
 
-    }
+//     }
 
-    inner();
+//     inner();
 
-}
+// }
 
-outer();
+// outer();
 
+
+
+
+// second example -------
+
+// function outer(){
+
+//     let name = "Gaurav Kumar";
+//     let age = 23;
+
+//     function inner(){
+//         console.log(`My name is ${name} and age is ${age}`);
+//     }
+//     inner();
+
+// }
+
+// outer();
