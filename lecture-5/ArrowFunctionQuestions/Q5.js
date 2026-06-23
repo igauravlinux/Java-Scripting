@@ -15,4 +15,15 @@ return reverse;
 
 }
 
+const countDigit = (x) =>{
+    let count = 0;
+
+    while(x > 0){
+        count++;
+        x = Math.floor(x / 10);
+    }
+    return count;
+}
+
 console.log(reverseNum(1234));
+console.log(countDigit(2121));
