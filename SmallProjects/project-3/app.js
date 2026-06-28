@@ -17,7 +17,10 @@ let students = [];
         console.log("3. Admit Emergency Student");
         console.log("4. Process First Student");
         console.log("5. Show All Students");
-        console.log("6. Exit");
+        console.log("6. Show Topper");
+        console.log("7. Average Marks");
+        console.log("8. Search Student By Name");
+        console.log("9. Exit");
     }
 
 
@@ -44,7 +47,20 @@ let students = [];
             case 5:
                 showAllStudents();
                 break;
+
             case 6:
+                showTopper();
+                break;
+
+            case 7:
+                averageMarks();
+                break;
+
+            case 8:
+                searchStudent();
+                break;
+
+            case 9:
                 rl.close();
                 break;
 
@@ -52,17 +68,11 @@ let students = [];
                 console.log("Invalid Input")
 
         }
-
-
 });
 
 }
 
 start();
-
-
-
-
 
 
 function addStudent(){
@@ -92,6 +102,8 @@ function addStudent(){
 function removeLastStudent(){
     if(students.length === 0){
         console.log("No students to remove");
+        start();
+        return;
     }else{
     const removedStd = students.pop();
    console.log("Removed Student:", removedStd); 
@@ -129,11 +141,105 @@ function admitEmergencyStudent(){
 };
 
 
+function processFirstStudent(){
+    if(students.length === 0){
+        console.log("No student found");
+        start();
+        return;
+    }else{
+        const firstSt = students.shift();
+        console.log("First Student: ",firstSt);
+    }
+    console.log(students);
+    start();
+}
+
+
+function showAllStudents(){
+
+    if(students.length === 0){
+        console.log("No Student found");
+        start();
+        return;
+    }else{
+        for(let val of students){
+        console.log(`Name: ${val.name} Marks: ${val.marks}`);
+        }
+    }   
+
+    start();
+}
+
+
+function showTopper(){
+
+    let topper = students[0];
+
+    if(students.length === 0){
+        console.log("No student found");
+        start();
+        return;
+    }else{
+        for(let i = 0; i < students.length; ++i){
+            if(students[i].marks > topper.marks){
+                topper = students[i];
+            }
+        }
+    }
+
+    console.log(`Topper Name: ${topper.name} Marks: ${topper.marks}`);
+
+    start();
+}
 
 
 
+function averageMarks(){
+
+    let total_marks = 0;
+    let avg = 0
+    if(students.length === 0){
+        console.log("No student found");
+        start();
+        return;
+    }else{
+
+        for(let i = 0; i < students.length; ++i){
+            total_marks += students[i].marks;
+        }
+
+        avg = total_marks / students.length;
+    }
+
+    console.log(`Average Marks is ${avg.toFixed(2)}`);
+    start();
+}
 
 
 
+function searchStudent(){
 
+    rl.question("Enter name to search: ",(k) =>{
 
+        if(students.length === 0){
+            console.log("No student found");
+            start();
+            return;
+        }else{
+
+            for(let i = 0; i < students.length; ++i){
+
+                if(k.toLowerCase() === students[i].name.toLowerCase()){
+                    console.log(students[i]);
+                    start();
+                    return;
+                }
+
+            }
+            console.log("No student found");
+        start();
+    }
+
+    });
+    
+}
