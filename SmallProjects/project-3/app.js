@@ -20,7 +20,9 @@ let students = [];
         console.log("6. Show Topper");
         console.log("7. Average Marks");
         console.log("8. Search Student By Name");
-        console.log("9. Exit");
+        console.log("9. Check Pass & Fail");
+        console.log("10. Check Grade");
+        console.log("11. Exit");
     }
 
 
@@ -61,6 +63,13 @@ let students = [];
                 break;
 
             case 9:
+                checkPassfail();
+                break;
+
+            case 10:
+                displayGrade();
+                break;
+            case 11:
                 rl.close();
                 break;
 
@@ -242,4 +251,66 @@ function searchStudent(){
 
     });
     
+}
+
+function checkPassfail() {
+
+    rl.question("Enter name to check: ",(j) =>{
+
+        if(students.length === 0){
+            console.log("No student found");
+            start();
+            return;
+        }else{
+
+            let found = false;
+
+            for(let i = 0; i < students.length; ++i){
+                if(j.toLowerCase() === students[i].name.toLowerCase()){
+                    found = true;
+
+                    if(students[i].marks > 40){
+                        console.log(`${students[i].name} is pass`);
+                    }else{
+                        console.log(`${students[i].name} is fail`);
+                    }
+                    break;
+                }
+            }
+            if(!found){
+                console.log("No Student found");
+            }
+        }
+
+        start();
+
+    });
+
+}
+
+
+function displayGrade(){
+    if(students.length === 0){
+        console.log("No student found");
+        start();
+        return;
+    }else{
+
+        for(let i = 0; i < students.length; ++i){
+
+            if(students[i].marks >= 90 && students[i].marks <= 100){
+                console.log( `${students[i].name} - ${students[i].marks}- Grade A` );
+            }else if(students[i].marks >= 75 && students[i].marks <= 89){
+                console.log(`${students[i].name} - ${students[i].marks}- Grade B` );
+            }else if(students[i].marks >= 50 && students[i].marks <= 74){
+                console.log(`${students[i].name} - ${students[i].marks}- Grade C` );
+            }else if(students[i].marks >= 0 && students[i].marks <= 49){
+                console.log(`${students[i].name} - ${students[i].marks}- Grade D` )
+            }else{
+                console.log("Grade F");
+            }
+
+        }
+        start();
+    }
 }
