@@ -24,3 +24,16 @@ console.log(msg1);
 let msg = document.getElementsByClassName("msg");
 console.log(msg);
 
+
+// querySelector
+let NameFeild = document.querySelector(".nameFeild");
+console.log(NameFeild);
+
+
+// querySelectorAll()
+let MyName = document.querySelectorAll(".Name");
+console.log(MyName);
+
+MyName.forEach((element) =>{
+    element.innerText = "gaurav"
+})
