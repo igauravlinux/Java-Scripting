@@ -1,8 +1,20 @@
 
 
 // innerText
+
+// let myName = document.getElementsByClassName("name");
+// console.log(myName[0].innerText);
+
+
+// // console.log(myName[2].innerText); //read
+// myName[0].innerText = "Soni";
+
+
+
+
+
 // let title1 = document.getElementById("titleTwo");
-let title2 = document.getElementsByClassName("titleOne");
+// let title2 = document.getElementsByClassName("titleOne");
 
 // title2[0].innerText = "Rahul"
 // title2[1].innerText = "Rahul"
@@ -13,17 +25,25 @@ let title2 = document.getElementsByClassName("titleOne");
 
 
 //  <!-- textContent -->
-// let name = document.getElementById("name");
+// let myName = document.getElementsByClassName("name");
+// console.log(myName[0].textContent);
 
-// console.log(name.innerText);
-// console.log(name.textContent);
 
 
 // innerHTML
+// let bike = document.getElementById("bike");
 
-// let car = document.getElementById("car");
+// bike.innerHTML = "<p> hey thiis is gaurav </p>"
+// console.log(bike.innerHTML);
 
-// console.log(car); //reading
+
+
+
+
+
+
+
+
 
 // car.innerHTML = "<p>hey this is a bike</p>";
 
