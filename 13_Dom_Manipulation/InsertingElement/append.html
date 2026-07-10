@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append (Add inside at the end)</title>
+    <style>
+        #container{
+            height: 300px;
+            width: 300px;
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    
+
+<div id="container">
+    <h1>Hey hey hey</h1>
+    <h2>Hey soni hey</h2>
+</div>
+
+
+<script>
+
+    let box = document.getElementById("container");
+
+    let p = document.createElement("p");
+    p.innerText = "hey this is a box";
+
+    box.append(p);
+
+
+</script>
+
+
+</body>
+</html>

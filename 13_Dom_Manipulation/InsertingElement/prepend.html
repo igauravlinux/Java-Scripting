@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prepend (add inside at the beggining)</title>
+    <style>
+        #container{
+            background-color: rebeccapurple;
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <span>gaurav</span>
+        <p>Soni Sharma</p>
+    </div>
+
+
+    <script>
+
+        let box = document.getElementById("container");
+
+        let heading = document.createElement("h1");
+        heading.innerText = "Hey Gaurav";
+
+        box.prepend(heading);
+
+
+
+    </script>
+
+
+
+</body>
+</html>

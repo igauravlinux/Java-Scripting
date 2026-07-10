@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After (Insert outside afetr the element)</title>
+    <style>
+        #container{
+            height: 300px;
+            width: 300px;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+
+    
+<div id="container">
+    <p>Lorem, ipsum dolor.</p>
+</div>
+
+
+<script>
+
+    let box = document.getElementById("container");
+
+    let sign = document.createElement("h2");
+    sign.innerText = "Gaurav Kumar";
+
+    box.after(sign);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>after (Insert outside before the element)</title>
+    <style>
+        #container{
+            width: 300px;
+            height: 300px;
+            background-color: saddlebrown;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <p>I'm Gaurav a Software Developer</p>
+    </div>
+
+
+    <script>
+
+        let box = document.getElementById("container");
+
+        let para = document.createElement("p");
+
+        para.innerText = "This is a paragraph";
+
+        box.before(para)
+
+
+
+    </script>
+
+
+</body>
+</html>

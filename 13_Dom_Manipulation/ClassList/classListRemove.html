@@ -3,14 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Working with Classes</title>
+    <style>
+        body{
+            background-color: #002244;
+        }
+        #box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            border: 10px solid wheat;
+        }
+        #box.circle{
+            border-radius: 50%;
+            border-top: 10px solid rgb(15, 174, 227);
+            animation: loader 0.5s ease infinite;        
+        }
+        @keyframes loader {
+            to{
+                transform: rotate(0);
+            }
+            from{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
 
-    
+    <div id="box" class="circle">
+
+    </div>
+
+
+    <script>
+
+        let box = document.getElementById("box");
+
+        box.classList.remove("circle")
+
+        console.log(box);
+        
 
 
 
+
+    </script>
 
     
 </body>
