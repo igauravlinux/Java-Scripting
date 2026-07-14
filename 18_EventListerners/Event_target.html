@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="buttons">
+    <button>Red</button>
+    <button>Blue</button>
+    <button>Green</button>
+    <button>Yellow</button>
+    <button>Black</button>
+    </div>
+
+
+
+
+
+    <script>
+
+        // let items = document.querySelectorAll("button");
+        
+        // items.forEach((item) => {
+            //     item.addEventListener("click",(e) =>{
+                //         e.target.style.backgroundColor = e.target.innerText.toLowerCase()
+                //     })            
+                // });
+                
+            let items = document.querySelector(".buttons");
+        
+            items.addEventListener("click",(e) =>{
+
+                    if(e.target.tagName === "BUTTON"){
+
+                        e.target.style.backgroundColor =
+                        e.target.innerText.toLowerCase();
+
+                    }
+
+                
+            })            
+        
+
+
+
+    </script>
+
+
+
+</body>
+</html>
