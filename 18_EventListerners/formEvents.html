@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    
+    <!-- form event -->
+    <form onsubmit="handleSubmit(event)">
+
+        <input type="text" oninput="handleInput(this.value)" required>
+        <button type="submit">Submit</button>
+
+
+    </form>
+
+
+    <script>
+
+        function handleInput(val){
+            console.log("Typed: ",val);
+        }
+
+        function handleSubmit(e){
+            e.preventDefault();
+            alert("submitted");
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
