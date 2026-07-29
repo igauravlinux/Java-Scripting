@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+        <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    
+
+    <div id="container">
+
+        <div class="input-group">
+            <input type="text" id="search-bar" placeholder="Enter City Name">
+            <button id="search">
+                 <i class="ri-search-line"></i>
+            </button>
+        </div>
+
+        <div class="address">
+            <h2 class="city">Patna</h2>
+            <h2 class="country">In</h2>
+        </div>
+
+        <div class="img">
+            <img src="./wether_icons/Icon=Night.png" width="100" class="weather-image">
+        </div>
+
+        <div class="temp-box">
+            <div class="flex">
+                <h1 class="temp">00</h1>
+                <p id="value"></p>
+            </div>
+            <p class="weather-name">Clear Night</p>
+        </div>
+
+        <div class="info">
+
+            <div class="wind-box box">
+                <p>Wind Now</p>
+                <div class="flex">
+                    <h1 id="wind">20</h1>
+                    <p id="wind-unit"></p>
+                </div>
+            </div>
+
+            <div class="humidity-box box">
+                <p>Humidity</p>
+                <div class="flex">
+                    <h1 id="humidity">12</h1>
+                    <p id="humidity-unit"></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

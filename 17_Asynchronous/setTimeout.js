@@ -1,4 +1,4 @@
-// setTiimeout()
+// setTimeout()
 
 console.log("Before setTimeout");
 

@@ -4,7 +4,14 @@
 let fetchData = new Promise((resolve,reject) =>{
     setTimeout(() =>{
         let success = true;
-        success ? resolve("Data Fetched") : reject("Error occured");
+        
+        if(success){
+            resolve("Data fetched")
+        }else{
+            reject("Error occured")
+        }
+
+
     },2000)
 })
 
