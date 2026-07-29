@@ -4,8 +4,6 @@ let title = document.getElementById("title");
 // How to use aync-await
 async function fetchData(){
 
-    try{
-
         // wait for response
         let response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
 
@@ -14,11 +12,7 @@ async function fetchData(){
 
         console.log(data);
         title.innerText = data.title;
-    }
 
-    catch(error){
-        console.log("Error: ",error);
-    }
 
 }
 
