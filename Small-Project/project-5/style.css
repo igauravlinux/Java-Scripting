@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #070738;
+    cursor: none;
+    color: white;
+}
+div{
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff2f;
+    backdrop-filter: blur(20px);
+    position: absolute;
+
+}
