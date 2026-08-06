@@ -14,6 +14,8 @@ let city = localStorage.getItem("city");
 console.log(city);
 // age
 let age = localStorage.getItem("age");
+console.log(typeof age); //String
+
 console.log(age);
 
 
@@ -23,3 +25,7 @@ localStorage.removeItem("city");
 
 // clear All
 localStorage.clear();
+
+
+
+// how 
