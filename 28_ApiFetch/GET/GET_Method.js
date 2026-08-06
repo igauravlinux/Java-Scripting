@@ -5,14 +5,15 @@ const apiUrl = "https://jsonplaceholder.typicode.com/posts/1";
 
 
 // GET Request
-async function getData(){
-
+async function getData() {
     const response = await fetch(apiUrl);
 
     const data = await response.json();
 
     console.log(data);
-    
+
+    // showing server data to browser
+    title.innerHTML = data.title;
 }
 
 getData();
