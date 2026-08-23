@@ -42,7 +42,6 @@ function checkWeather(){
 
     // Log Data
     .then(data =>{
-        console.log(data);
         console.log(data.weather[0]);
         city.innerText = data.name + ",";
         country.innerText = data.sys.country
