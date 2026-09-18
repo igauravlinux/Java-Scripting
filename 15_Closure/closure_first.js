@@ -12,36 +12,21 @@
 // myFunk();
 
 
-// function show() {
-//     const info = {
-//         name: "Gaurav",
-//         age: 23
-//     };
+function show() {
+    const info = {
+        name: "Gaurav",
+        age: 23
+    };
 
 
-//     return function inner() {
-//         console.log(`Name is ${info.name} and Age is ${info.age}`);
-//     }
+    return function inner() {
+        console.log(`Name is ${info.name} and Age is ${info.age}`);
+    }
 
-//     inner();
-// }
+    inner();
+}
 
-// let display =  show(); // show() katam hua
+let display =  show(); // show() katam hua
 
 // display(); //phir bhi info accessiible hai
 
-
-
-// lexical scope
-
-function show(){
-    let name = "Gaurav";
-
-    return function innerFunk(){
-        console.log(name);
-    }
-
-}
-
-let result = show();
-result();

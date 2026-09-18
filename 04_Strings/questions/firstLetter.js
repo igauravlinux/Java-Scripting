@@ -3,17 +3,20 @@
 
 let str = "gaurav";
 
-let result = "";
+let res = "";
 
 for(let i = 0; i < str.length; ++i){
+
     if(i === 0){
-        result += str[i].toUpperCase();
+        res += str[i].toUpperCase();
     }else{
-        result += str[i];
+        res += str[i];
     }
+
 }
 
-console.log(result);
+console.log(res);
+
 
 
 

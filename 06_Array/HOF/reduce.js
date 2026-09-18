@@ -2,14 +2,13 @@
 
 
 
-// let numbers = [2,2,2];
+let numbers = [2,2,2];
 
-// let result = numbers.reduce((acc, current) =>{
-//     return acc + current;
-// }, 0);
+let res = numbers.reduce((acc , cur)=>{
+    return acc + cur;
+},0)
 
-// console.log(result);
-
+console.log(res);
 
 
 // let numbers = [2,2,2];
@@ -21,12 +20,12 @@
 // console.log(result);
 
 
-const student = [
-    {name: "Gaurav" , age: 23},
-    {name: "Soni" , age: 13},
-    {name: "Prakash" , age: 25},
-    {name: "Anand" , age: 27},
-];
+// const student = [
+//     {name: "Gaurav" , age: 23},
+//     {name: "Soni" , age: 13},
+//     {name: "Prakash" , age: 25},
+//     {name: "Anand" , age: 27},
+// ];
 
 // let totalAge = student.reduce((acc,st) =>{
 //     return acc + st.age;
@@ -34,12 +33,12 @@ const student = [
 
 
 
-let adultAge = student
-    .filter(st => st.age >= 18)
-    .map(st => st.age)
-    .reduce((acc, age) => acc + age, 0);
+// let adultAge = student
+//     .filter(st => st.age >= 18)
+//     .map(st => st.age)
+//     .reduce((acc, age) => acc + age, 0);
 
-console.log(adultAge);
+// console.log(adultAge);
 
 
 

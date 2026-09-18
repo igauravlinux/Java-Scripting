@@ -1,18 +1,18 @@
 // {1} functional scope >>>>>>>>>>>>
 
-// function show(){
+// const show = () =>{ // opening bracket 
 //     let name = "Soni Sharma";
 
-
-//     if(true){     
-//         console.log(`Her name is ${name}`);
+//     if(4 < 5){     
+//        if(10 >= 10){
+//             console.log(`Her name is ${name}`);
+//        }
 //     }
 
+// } //closing bracket
 
-// }
 // show();
 // console.log(name); //Error
-
 
 
 // Note :- variable ko kisi function ke andar declare krte hai to us variable ko ham function ke andar kahin v access kr skte hai ,
@@ -26,17 +26,18 @@
 // {2}  Global Scope Variable >>>>>>>>>>>>>
 
 
-// let name = "Soni Sharma";
-// let age = 20;
+// let name = "Gaurav kumar";
+// let age = 23;
 
-// function show(){
-
-//     console.log(`Name is ${name} and age is ${age}!!!`); // function ke andar
-
+// const myProfile = ()=>{
+//     console.log(`My name is ${name} and my age is ${age}`);
 // }
 
-// show();
-// console.log(`Name is ${name} and age is ${age} !!!`); // function ke bahar 
+// myProfile();
+// console.log(`My name is ${name} and my age is ${age}`);
+
+
+
 
 // Note :- Global variable har block function ke bahar declare hota hai , aur isko kisi v block ya function me , ya pure program me kahin v use kr ste hai
 
@@ -54,7 +55,7 @@
 
     
 //     if(true){
-//         let name = "Soni Sharma";
+//         const name = "Soni Sharma";
 //         console.log(`Her name is ${name}`);  
 //     }
     
@@ -71,18 +72,18 @@
 // Note :- Inner function apne parent function ke variables ko access kar sakta hai.
 
 
-// function outer(){  //Outer Function
+// function outer (){ //outer function
 
-//     let name = "        Soni Sharma  ";
+//     let a = 10;
+//     let b = 5;
 
-//     function inner(){   // Inner Function
+//     function inner () { //inner function
 
-//         console.log(name.trimEnd());
-
+//         console.log( `Sum of ${a} and ${b} is ${a + b}`);
+         
 //     }
 
 //     inner();
-
 // }
 
 // outer();

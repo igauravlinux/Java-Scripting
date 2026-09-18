@@ -1,5 +1,5 @@
 
-
+// The flatMap() method in JavaScript is a built-in array method that first maps each element using a mapping function, then flattens the result into a new array by exactly one level.
 
 // const students = [
 //     {name: "Gaurav", skill: [["Java","SpringBoot"], ["HTML ,JavaScript"]]},
@@ -16,16 +16,35 @@
 
 
 
+// const orders = [
+//   {
+//     id: 1,
+//     items: ["Laptop", "TV"],
+//   },
+//   {
+//     id: 2,
+//     items: ["iPhone", "Books"],
+//   },
+// ];
+
+// let items = orders.flatMap(it => it.items)
+// console.log(items)
+
+
 const orders = [
   {
-    id: 1,
-    items: ["Laptop", "TV"],
+    id : 1,
+    items : ["TV","Cooller"]
   },
   {
-    id: 2,
-    items: ["iPhone", "Books"],
+    id : 2,
+    items : ["Plate","Microwave"]
   },
-];
+  {
+    id : 3,
+    items : ["Machine","Freeze"]
+  }
+]
 
-let items = orders.flatMap(it => it.items)
-console.log(items)
+let res = orders.flatMap(e => e.items)
+console.log(res);

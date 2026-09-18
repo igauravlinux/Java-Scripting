@@ -1,13 +1,13 @@
 
 // filter() ka use array me se sirf un elements ko select karne ke liye hota hai jo kisi condition ko satisfy karte hain.
 
-// let arr = [1,2,3,4];
+let arr = [1,2,3,4];
 
-// let result = arr.filter((e) =>{
-//     return e % 2 != 0;
+// let val = arr.filter((e)=>{
+//     return e % 2 === 0;
 // })
 
-// console.log(result);
+// console.log(val);
 
 
 // let even_arr = arr.filter(num => num % 2 == 0)
@@ -18,19 +18,33 @@
 
 
 
-
-
-
-
 // Q2 . Age filter
 
-const student = [
-    {name : "Gaurav" , age : 23},
-    {name : "prerna" , age : 13},
-    {name : "Sushmita" , age : 19},
-    {name : "Pallavi" , age : 11},
-    {name : "Soni" , age : 24}
-]
+// const student = [
+//     {name : "Gaurav" , age : 23},
+//     {name : "prerna" , age : 13},
+//     {name : "Sushmita" , age : 19},
+//     {name : "Pallavi" , age : 11},
+//     {name : "Soni" , age : 21}
+// ]
+
+// let val = student.filter((e)=>{
+//     return e.age >= 18;
+// })
+
+// console.log(val);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // let usersAge = student.map((st) => st.age);

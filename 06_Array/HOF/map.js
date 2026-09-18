@@ -42,11 +42,11 @@
 
 // Object ke sath
 
-const students = [
-    {name: "Gaurav", age: 23 },
-    {name: "Khusi", age:21},
-    {name: "Soni", age:20}
-];
+// const students = [
+//     {name: "Gaurav", age: 23 },
+//     {name: "Khusi", age:21},
+//     {name: "Soni", age:20}
+// ];
 
 // let names = students.map((e) =>{
 //     return e.name;
@@ -109,3 +109,16 @@ const students = [
 // });
 
 // console.log(result);
+
+
+
+
+// let arr = ["apple","ball","cat","dog"];
+
+// let val = arr.map((e) =>{
+//     return e.toUpperCase();
+// })
+
+// console.log(val);
+
+
